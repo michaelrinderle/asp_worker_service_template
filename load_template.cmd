@@ -1,3 +1,4 @@
-cd src\AspWorkerService
+cd src
+cd AspWorkerService
 dotnet new -i .\
 pause

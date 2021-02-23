@@ -6,9 +6,20 @@
     <UserSecretsId>dotnet-AspWorkerService-4E1F7733-9D4C-4777-9C62-143B094C0C29</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageOutputPath>./nupkg</PackageOutputPath>    
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
   </ItemGroup>
 </Project>
