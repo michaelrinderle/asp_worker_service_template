@@ -3,7 +3,15 @@
 * Features
 	* .Net Core Worker Service
 	* Asp.Netcore Web API Controller Functionality
-    
+   
+* Load Template
+
+```
+load_template.cmd (in root folder)
+dotnet new (look for new template entry)
+```
+
+ 
 * Quick Publish
 
 ```

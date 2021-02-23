@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Michael Rinderle",
+  "classifications": [ "Common", "Console", "C#9" ],
+  "name": "ASP.NETCORE Worker Service Template",
+  "defaultName": "AspWorkerService",
+  "description": "ASP.NETCORE Worker Service Template",
+  "identity": "AspWorkerService.CSharp",
+  "groupIdentity": "AspWorkerService",
+  "shortName": "AspWorkerService",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "AspWorkerService",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "exclude": [
+        ".template.config/**"
+      ]
+    }
+  ]
+}

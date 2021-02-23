@@ -29,11 +29,11 @@ namespace AspWorkerService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AdminController : ControllerBase
+    public class DataController : ControllerBase
     {
-        private readonly ILogger<AdminController> _logger;
+        private readonly ILogger<DataController> _logger;
 
-        public AdminController(ILogger<AdminController> logger)
+        public DataController(ILogger<DataController> logger)
         {
             _logger = logger;
         }
